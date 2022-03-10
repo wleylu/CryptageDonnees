@@ -1,0 +1,22 @@
+keytool -genkey -alias leylu -keyalg RSA -keystore leylu.jks -keysize 2048
+
+yacou.kone@ABI-DED-YACOUBA MINGW64 /d/ProjetsJetBrainsJava (master)
+$ keytool -genkey -alias leylu -keyalg RSA -keystore leylu.jks -keysize 2048
+Tapez le mot de passe du Keystore :  123456
+Quels sont vos pr▒nom et nom ?
+  [Unknown] :  Yacouba Kone
+Quel est le nom de votre unit▒ organisationnelle ?
+  [Unknown] :  KONE
+Quelle est le nom de votre organisation ?
+  [Unknown] :  KONE
+Quel est le nom de votre ville de r▒sidence ?
+  [Unknown] :  Abidjan
+Quel est le nom de votre ▒tat ou province ?
+  [Unknown] :  Yopougon
+Quel est le code de pays ▒ deux lettres pour cette unit▒ ?
+  [Unknown] :  CI
+Est-ce CN=Yacouba Kone, OU=KONE, O=KONE, L=Abidjan, ST=Yopougon, C=CI ?
+  [non] :  oui
+==================================================================
+===============Génerer clé public========================
+keytool -export -alias leylu -keystore leylu.jks -rfc -file myCertificate.cert
